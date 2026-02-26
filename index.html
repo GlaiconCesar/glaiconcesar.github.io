@@ -1,48 +1,129 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glaicon Rosa - Portifolio</title>
+    <title>Glaicon Rosa | Desenvolvedor Full-Stack</title>
+    <meta name="description"
+        content="Portfólio de Glaicon Rosa, desenvolvedor Full-Stack com foco em TOTVS Fluig, front-end moderno, integrações e automação de processos.">
+    <meta property="og:title" content="Glaicon Rosa | Portfolio">
+    <meta property="og:description"
+        content="Projetos, experiência e habilidades em desenvolvimento web e automação com TOTVS Fluig.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://glaiconcesar.github.io/">
+    <meta property="og:image" content="https://glaiconcesar.github.io/assets/fluig.png">
+    <meta name="theme-color" content="#0d1226">
+    <link rel="canonical" href="https://glaiconcesar.github.io/">
     <link rel="stylesheet" href="./style/style.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="./">home</a>
-            <a href="./about">Sobre mim</a>
+    <a class="skip-link" href="#main-content">Pular para conteúdo principal</a>
+    <header class="site-header">
+        <nav aria-label="Navegação principal" class="nav-wrap">
+            <a class="brand" href="#home" aria-label="Voltar ao início">Glaicon Rosa</a>
+            <button id="langToggle" class="lang-btn" aria-label="Alternar idioma para inglês" type="button">EN</button>
+            <ul class="nav-list">
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#experience">Experiência</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <h1>Eleve seu negócio a outro nível <strong class="title-featured">com uma interface fácil de usar e
-                    intuitiva!</strong></h1>
+
+    <main id="main-content" class="container">
+        <section id="home" class="hero" aria-labelledby="hero-title">
             <div>
-                <p>Olá! Sou <span>Glaicon Rosa</span>, desenvolvedor web Full-Stack com especialidade em <span>TOTVS
-                        Fluig</span>.</p>
-                <p> Ajudo empresas a padronizar seu ambiente de comunicação interna, controlar seus processos e efetuar
-                    a gestão dos documento, tudo isso de forma digital. Vamos conversar?</p>
+                <p class="eyebrow" data-i18n="headline">Desenvolvedor Full-Stack • TOTVS Fluig Specialist</p>
+                <h1 id="hero-title" data-i18n="heroTitle">Desenvolvo soluções web modernas para digitalizar processos e
+                    gerar produtividade real para negócios.</h1>
+                <p class="lead" data-i18n="heroText">Atuo com front-end, integrações e automações corporativas. Meu foco é
+                    unir experiência de usuário, eficiência operacional e código sustentável.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#projects" data-i18n="ctaProjects">Ver projetos</a>
+                    <a class="btn" href="#contact" data-i18n="ctaContact">Falar comigo</a>
+                </div>
             </div>
-            <div class="links">
-                <h2>Acesse minhas redes</h2>
-                <a href="https://www.linkedin.com/in/glaicon-rosa/" target="_blank">
-                    <img src="./assets/linkedin.png" alt="Logo linkedin">
-                    Linkedin
-                </a>
-                <a href="https://github.com/GlaiconCesar" target="_blank">
-                    <img src="./assets/github.png" alt="Logo github">
-                    Github
-                </a>
+            <img src="./assets/fluig.png" alt="Imagem de apresentação profissional de Glaicon Rosa" loading="lazy">
+        </section>
+
+        <section id="projects" class="section" aria-labelledby="projects-title">
+            <h2 id="projects-title" data-i18n="projectsTitle">Projetos em destaque</h2>
+            <div class="grid cards">
+                <article class="card">
+                    <h3>Fluig Process Hub</h3>
+                    <p data-i18n="project1Desc">Estrutura de processos digitais com formulários, aprovação multinível e
+                        rastreabilidade completa.</p>
+                    <p class="stack">TOTVS Fluig • JavaScript • BPM</p>
+                    <a href="./conhecimentos/fluig" aria-label="Abrir página Fluig e BPM">Detalhes</a>
+                </article>
+                <article class="card">
+                    <h3>Front-end Experience</h3>
+                    <p data-i18n="project2Desc">Melhoria de interfaces responsivas com foco em clareza visual,
+                        acessibilidade e performance.</p>
+                    <p class="stack">HTML • CSS • JavaScript</p>
+                    <a href="./conhecimentos/frontend" aria-label="Abrir página Front-end">Detalhes</a>
+                </article>
+                <article class="card">
+                    <h3>API & Integration Layer</h3>
+                    <p data-i18n="project3Desc">Integração entre ERP e sistemas internos para consolidar dados críticos e
+                        reduzir retrabalho manual.</p>
+                    <p class="stack">REST • Node/Java • SQL</p>
+                    <a href="./conhecimentos/backend" aria-label="Abrir página Back-end">Detalhes</a>
+                </article>
             </div>
         </section>
-        <img src="./assets/fluig.png" alt="Foto Glaicon Rosa">
+
+        <section id="experience" class="section" aria-labelledby="experience-title">
+            <h2 id="experience-title" data-i18n="experienceTitle">Experiência</h2>
+            <div class="timeline">
+                <article>
+                    <h3 data-i18n="exp1Title">Automação de processos corporativos</h3>
+                    <p data-i18n="exp1Text">Mapeamento de fluxos internos e implantação de automações em Fluig para
+                        reduzir tempo operacional e aumentar governança.</p>
+                </article>
+                <article>
+                    <h3 data-i18n="exp2Title">Desenvolvimento de interfaces e integrações</h3>
+                    <p data-i18n="exp2Text">Criação de interfaces web e serviços integrados para conectar áreas,
+                        melhorar usabilidade e manter consistência de dados.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="section" aria-labelledby="skills-title">
+            <h2 id="skills-title" data-i18n="skillsTitle">Skills</h2>
+            <ul class="chips" aria-label="Lista de habilidades técnicas">
+                <li>TOTVS Fluig</li>
+                <li>BPM</li>
+                <li>HTML Semântico</li>
+                <li>CSS Responsivo</li>
+                <li>JavaScript</li>
+                <li>APIs REST</li>
+                <li>SQL</li>
+                <li>Git / GitHub</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="section" aria-labelledby="contact-title">
+            <h2 id="contact-title" data-i18n="contactTitle">Contato</h2>
+            <p data-i18n="contactText">Vamos conversar sobre seu projeto?</p>
+            <ul class="contact-list">
+                <li><a href="mailto:glaiconrosa@gmail.com" aria-label="Enviar e-mail para Glaicon Rosa">glaiconrosa@gmail.com</a></li>
+                <li><a href="https://www.linkedin.com/in/glaicon-rosa/" target="_blank" rel="noreferrer"
+                        aria-label="Abrir perfil do LinkedIn">LinkedIn</a></li>
+                <li><a href="https://github.com/GlaiconCesar" target="_blank" rel="noreferrer"
+                        aria-label="Abrir perfil do GitHub">GitHub</a></li>
+            </ul>
+        </section>
     </main>
-    <footer>
-        <p>Desenvolvido por Glaicon Rosa</p>
+
+    <footer class="site-footer">
+        <p>© <span id="year"></span> Glaicon Rosa</p>
     </footer>
+
+    <script src="./style/script.js" defer></script>
 </body>
 
 </html>

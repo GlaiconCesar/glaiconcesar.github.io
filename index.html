@@ -5,43 +5,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glaicon Rosa - Portifolio</title>
+    <meta name="description"
+        content="Portfólio de Glaicon Rosa, desenvolvedor full-stack com experiência em TOTVS Fluig, front-end e automação de processos.">
+    <title>Glaicon Rosa | Portfólio</title>
     <link rel="stylesheet" href="./style/style.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="./">home</a>
+            <a class="active" href="./">Início</a>
             <a href="./about">Sobre mim</a>
+            <a href="./conhecimentos">Conhecimentos</a>
         </nav>
     </header>
-    <main>
-        <section>
-            <h1>Eleve seu negócio a outro nível <strong class="title-featured">com uma interface fácil de usar e
-                    intuitiva!</strong></h1>
-            <div>
-                <p>Olá! Sou <span>Glaicon Rosa</span>, desenvolvedor web Full-Stack com especialidade em <span>TOTVS
-                        Fluig</span>.</p>
-                <p> Ajudo empresas a padronizar seu ambiente de comunicação interna, controlar seus processos e efetuar
-                    a gestão dos documento, tudo isso de forma digital. Vamos conversar?</p>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero__content">
+                <h1>Transformo desafios de negócio em <span class="highlight">soluções digitais modernas</span>.</h1>
+                <p>Olá! Sou <strong>Glaicon Rosa</strong>, desenvolvedor Full-Stack focado em experiência do usuário,
+                    produtividade de equipes e digitalização de processos com TOTVS Fluig.</p>
+                <p class="page-intro">Criei uma nova estrutura para o portfólio separando por áreas de conhecimento,
+                    facilitando a visualização das minhas competências técnicas e projetos.</p>
+
+                <h2 class="section-title">Conecte-se comigo</h2>
+                <div class="social-links">
+                    <a class="btn" href="https://www.linkedin.com/in/glaicon-rosa/" target="_blank" rel="noreferrer">
+                        <img src="./assets/linkedin.png" alt="Logo do Linkedin">
+                        Linkedin
+                    </a>
+                    <a class="btn" href="https://github.com/GlaiconCesar" target="_blank" rel="noreferrer">
+                        <img src="./assets/github.png" alt="Logo do Github">
+                        Github
+                    </a>
+                </div>
             </div>
-            <div class="links">
-                <h2>Acesse minhas redes</h2>
-                <a href="https://www.linkedin.com/in/glaicon-rosa/" target="_blank">
-                    <img src="./assets/linkedin.png" alt="Logo linkedin">
-                    Linkedin
-                </a>
-                <a href="https://github.com/GlaiconCesar" target="_blank">
-                    <img src="./assets/github.png" alt="Logo github">
-                    Github
-                </a>
+
+            <div class="hero__photo">
+                <img src="./assets/fluig.png" alt="Foto de apresentação de Glaicon Rosa">
             </div>
         </section>
-        <img src="./assets/fluig.png" alt="Foto Glaicon Rosa">
+
+        <section>
+            <h2 class="section-title">Áreas de conhecimento</h2>
+            <div class="card-grid">
+                <article class="card">
+                    <h3>Fluig & BPM</h3>
+                    <p>Construção de formulários, workflows, integrações e gestão documental para transformar operações
+                        manuais em fluxos digitais rastreáveis.</p>
+                    <a href="./conhecimentos/fluig">Ver página</a>
+                </article>
+                <article class="card">
+                    <h3>Front-end</h3>
+                    <p>Interfaces responsivas, acessíveis e orientadas à conversão com HTML, CSS, JavaScript e
+                        arquitetura de componentes.</p>
+                    <a href="./conhecimentos/frontend">Ver página</a>
+                </article>
+                <article class="card">
+                    <h3>Back-end</h3>
+                    <p>APIs, automações e integrações corporativas para garantir consistência dos dados e escalabilidade
+                        dos processos.</p>
+                    <a href="./conhecimentos/backend">Ver página</a>
+                </article>
+                <article class="card">
+                    <h3>DevOps & Qualidade</h3>
+                    <p>Versionamento, pipelines e boas práticas de entrega contínua para garantir estabilidade com
+                        evolução constante.</p>
+                    <a href="./conhecimentos/devops">Ver página</a>
+                </article>
+            </div>
+        </section>
     </main>
+
     <footer>
-        <p>Desenvolvido por Glaicon Rosa</p>
+        <p>Desenvolvido por Glaicon Rosa • 2026</p>
     </footer>
 </body>
 
